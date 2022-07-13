@@ -112,7 +112,10 @@ def get_replaced_false_targets(true_target, task_config):
     n = len(elements)
     cands = []
     for i in range(n):
-        cand = set([t.split(' | ')[i] for t in true_target])
+        if true_target==[]:
+            cand=[]
+        else:
+            cand = set([t.split(' | ')[i] for t in true_target])
         cands.append(cand)
     false_target = [[]]
     for i in range(n):
