@@ -1,0 +1,30 @@
+requirements:
+transformers==4.8.0
+sentencepiece==0.1.91
+pytorch_lightning==0.8.1
+editdistance==0.5.3
+
+python train.py \
+--task="aste" \
+--dataset="rest16" \
+--model_name_or_path="t5-base" \
+--max_seq_length=128 \
+--max_ans_length=32 \
+--phase_1_epochs=5 \
+--phase_2_epochs=20 \
+--train_batch_size=8 \
+--eval_batch_size=4 \
+--do_phase_1=True \
+--do_phase_2=True \
+--do_eval_all_ckpts=True \
+--n_gpu="0" \
+--num_beams=6 \
+--output_dir="outputs" \
+--seed=42 \
+--train_file="train" \
+--dev_file="dev" \
+--test_file"="test" \
+--task_config_file="task_config.json"
+;
+
+

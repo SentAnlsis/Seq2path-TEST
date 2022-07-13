@@ -1,0 +1,61 @@
+{
+  "aste":
+  {
+    "task": "aste",
+    "datasets": ["rest14", "rest15", "rest16", "laptop14"],
+    "names": ["aspect", "opinion", "sentiment"],
+    "elements": ["extraction", "extraction", "unique_cls"],
+    "unique_cls":
+    {
+      "all_datasets": ["positive", "negative", "neutral"]
+    }
+  },
+  "aope":
+  {
+    "datasets": ["rest14", "rest15", "rest16", "laptop14"],
+    "names": ["aspect", "opinion"],
+    "elements": ["extraction", "extraction"]
+  },
+  "tasd":
+  {
+    "datasets": ["rest15", "rest16"],
+    "names": ["category", "aspect", "sentiment"],
+    "elements": ["multi_cls", "extraction", "unique_cls"],
+    "null_extraction": "NULL",
+    "unique_cls":
+    {
+      "all_datasets": ["positive", "negative", "neutral"]
+    },
+    "multi_cls":
+    {
+      "rest15": ["restaurant prices", "drinks prices", "ambience general", "food prices", "drinks style_options", "food general", "food quality", "restaurant miscellaneous", "location general", "restaurant general", "food style_options", "service general", "drinks quality"],
+      "rest16": ["restaurant prices", "drinks prices", "ambience general", "food prices", "drinks style_options", "food quality", "restaurant miscellaneous", "location general", "restaurant general", "food style_options", "service general", "drinks quality"]
+    }
+  },
+  "uabsa":
+  {
+    "datasets": ["rest14", "rest15", "rest16", "laptop14"],
+    "names": ["aspect", "sentiment"],
+    "elements": ["extraction", "unique_cls"],
+    "unique_cls":
+    {
+      "all_datasets": ["positive", "negative", "neutral"]
+    }
+  },
+  "acos":
+  {
+    "datasets": ["laptop14", "rest16"],
+    "names": ["category", "aspect", "opinion", "sentiment"],
+    "elements": ["multi_cls", "extraction", "extraction", "unique_cls"],
+    "null_extraction": "NULL",
+    "unique_cls":
+    {
+      "all_datasets": ["positive", "negative", "neutral"]
+    },
+    "multi_cls":
+    {
+      "laptop14": ["MEMORY#OPERATION_PERFORMANCE", "DISPLAY#OPERATION_PERFORMANCE", "LAPTOP#GENERAL", "PORTS#GENERAL", "MULTIMEDIA_DEVICES#USABILITY", "MOTHERBOARD#OPERATION_PERFORMANCE", "Out_Of_Scope#OPERATION_PERFORMANCE", "SOFTWARE#GENERAL", "MULTIMEDIA_DEVICES#DESIGN_FEATURES", "CPU#QUALITY", "SHIPPING#QUALITY", "MULTIMEDIA_DEVICES#CONNECTIVITY", "MOUSE#GENERAL", "SUPPORT#QUALITY", "CPU#DESIGN_FEATURES", "SOFTWARE#PRICE", "LAPTOP#PORTABILITY", "OS#MISCELLANEOUS", "BATTERY#QUALITY", "LAPTOP#CONNECTIVITY", "MEMORY#GENERAL", "MEMORY#DESIGN_FEATURES", "SUPPORT#GENERAL", "FANS&COOLING#DESIGN_FEATURES", "POWER_SUPPLY#CONNECTIVITY", "SHIPPING#OPERATION_PERFORMANCE", "KEYBOARD#QUALITY", "LAPTOP#QUALITY", "HARDWARE#QUALITY", "WARRANTY#QUALITY", "OPTICAL_DRIVES#USABILITY", "OPTICAL_DRIVES#GENERAL", "HARDWARE#USABILITY", "CPU#GENERAL", "SUPPORT#PRICE", "FANS&COOLING#OPERATION_PERFORMANCE", "KEYBOARD#USABILITY", "MULTIMEDIA_DEVICES#PRICE", "OS#GENERAL", "DISPLAY#PRICE", "GRAPHICS#DESIGN_FEATURES", "FANS&COOLING#QUALITY", "SUPPORT#DESIGN_FEATURES", "PORTS#QUALITY", "MULTIMEDIA_DEVICES#GENERAL", "HARDWARE#OPERATION_PERFORMANCE", "KEYBOARD#PORTABILITY", "PORTS#DESIGN_FEATURES", "BATTERY#GENERAL", "SOFTWARE#USABILITY", "Out_Of_Scope#USABILITY", "OS#DESIGN_FEATURES", "PORTS#OPERATION_PERFORMANCE", "SOFTWARE#OPERATION_PERFORMANCE", "FANS&COOLING#GENERAL", "BATTERY#DESIGN_FEATURES", "HARD_DISC#PRICE", "MULTIMEDIA_DEVICES#QUALITY", "OS#USABILITY", "COMPANY#DESIGN_FEATURES", "PORTS#CONNECTIVITY", "COMPANY#QUALITY", "GRAPHICS#GENERAL", "MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE", "CPU#OPERATION_PERFORMANCE", "MOTHERBOARD#QUALITY", "LAPTOP#MISCELLANEOUS", "LAPTOP#DESIGN_FEATURES", "KEYBOARD#OPERATION_PERFORMANCE", "PORTS#USABILITY", "DISPLAY#DESIGN_FEATURES", "HARD_DISC#QUALITY", "OS#QUALITY", "POWER_SUPPLY#QUALITY", "COMPANY#OPERATION_PERFORMANCE", "HARD_DISC#GENERAL", "WARRANTY#GENERAL", "KEYBOARD#GENERAL", "HARD_DISC#OPERATION_PERFORMANCE", "LAPTOP#PRICE", "POWER_SUPPLY#GENERAL", "MEMORY#USABILITY", "KEYBOARD#PRICE", "LAPTOP#USABILITY", "SOFTWARE#PORTABILITY", "SHIPPING#GENERAL", "CPU#PRICE", "KEYBOARD#DESIGN_FEATURES", "OPTICAL_DRIVES#DESIGN_FEATURES", "SUPPORT#OPERATION_PERFORMANCE", "OS#OPERATION_PERFORMANCE", "LAPTOP#OPERATION_PERFORMANCE", "GRAPHICS#USABILITY", "SHIPPING#PRICE", "SOFTWARE#QUALITY", "COMPANY#GENERAL", "POWER_SUPPLY#DESIGN_FEATURES", "HARD_DISC#DESIGN_FEATURES", "SOFTWARE#DESIGN_FEATURES", "BATTERY#OPERATION_PERFORMANCE", "OPTICAL_DRIVES#OPERATION_PERFORMANCE", "DISPLAY#GENERAL", "DISPLAY#QUALITY", "DISPLAY#USABILITY", "HARDWARE#PRICE", "COMPANY#PRICE", "GRAPHICS#OPERATION_PERFORMANCE", "PORTS#PORTABILITY", "HARD_DISC#USABILITY", "Out_Of_Scope#GENERAL", "MEMORY#QUALITY", "POWER_SUPPLY#OPERATION_PERFORMANCE", "HARDWARE#DESIGN_FEATURES", "HARDWARE#GENERAL"],
+      "rest16": ["DRINKS#STYLE_OPTIONS", "FOOD#STYLE_OPTIONS", "RESTAURANT#MISCELLANEOUS", "LOCATION#GENERAL", "RESTAURANT#GENERAL", "DRINKS#QUALITY", "RESTAURANT#PRICES", "DRINKS#PRICES", "FOOD#QUALITY", "AMBIENCE#GENERAL", "FOOD#PRICES", "SERVICE#GENERAL"]
+    }
+  }
+}
